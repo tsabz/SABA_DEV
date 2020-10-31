@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 // import Tonia from './assests/images/toniasaba.JPG';
-// import Footer from './components/footer.js';
+import Footer from './components/footer.js';
 // import HomePage from './pages/home.js';
 // import ProjectPage from './pages/projects.js';
 import Typist from 'react-typist';
@@ -35,7 +35,7 @@ class App extends React.Component {
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
-          
+            <Footer />
         </Container>
       </Router>
     )

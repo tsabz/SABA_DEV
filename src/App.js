@@ -4,13 +4,32 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
-// import Tonia from './assests/images/toniasaba.JPG';
+
 import Footer from './components/footer.js';
-// import HomePage from './pages/home.js';
+import HomePage from './pages/home.js';
 // import ProjectPage from './pages/projects.js';
 import Typist from 'react-typist';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: 'Tonia Saba',
+      headerLinks: [
+        { title: 'home', path: '/'},
+        { title: 'projects', path: '/projects'}
+      ],
+      home: {
+        img: "Tonia",
+        title: 'Software Engineer',
+        subTitle: 'Node JS, Express JS, React, AngularJS, jQuery, PHP, MongoDB, PostgreSQL',
+        text: 'I believe that learning how to learn new software is the key to the future. As a self taught audio engineer and producer who is passionate about creating with technology, learning how to code was the next step to innovation. As a creative in software development nothing excites me more than coming together with a team of individuals to share our unique skill sets to work through code in order to reach our end product. '
+      },
+      projects : {
+        title: 'projects'
+      },
+    }
+  }
 
 
   render() {
@@ -35,6 +54,10 @@ class App extends React.Component {
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
+
+            <Route path="/" exact render={() => 
+                <HomePage 
+                    img={this.state.home.img} title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
             <Footer />
         </Container>
       </Router>

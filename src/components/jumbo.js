@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Star_cluster from '../assests/star_cluster.jpg'
+import Image, { Shimmer } from 'react-shimmer'
 
 import Stars from './stars.js'
 
@@ -13,14 +14,15 @@ function Jumbo(props) {
     return (
         <Jumbotron className="bg-transparent jumbotron-fluid p-5">
             <Container fluid={true}>
+            <Row className="justify-content-center py-5">
             <Stars/>
-
-            <br/>
+            </Row> 
+            
     <Button className="button" href="https://github.com/tsabz" target="_blank" rel="noopener noreferrer" variant="light" size="lg" block>Github</Button>
             
                 <Row className="justify-content-center py-5">
-                    <img className="g-card-homeimage" src={Star_cluster} alt={Star_cluster}/>
-                    <img className="g-card-homeimage" src={Star_cluster} alt={Star_cluster}/>
+                    <img className="g-card-homeimage" src={Star_cluster} alt={Star_cluster} />
+                    <img className="g-card-homeimage" src={Star_cluster} alt={Star_cluster} />
                 
                     <Col md={8} sm={12}>
                         {/* { props.title && <h1 className="display-3 front-weight-bolder">{props.title}</h1> } */}

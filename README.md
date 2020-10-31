@@ -2,7 +2,7 @@
 made with React
 
 ### Installations
-
+npm install --save react-router-dom
 npm install react-bootstrap bootstrap
 npm install react-spring
 npm install react-typist --save

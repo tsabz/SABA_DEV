@@ -7,7 +7,7 @@ function JumboCardInfo(props) {
 
     return(
         <animated.div className="g-card-info" style={style}>
-            <p className="g-card-title">{props.description}</p>
+            <p className="g-card-description">{props.description}</p>
         </animated.div>
     )
 }

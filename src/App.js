@@ -39,7 +39,7 @@ class App extends React.Component {
         <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Typist className="TypistExample-message"
               cursor={{ hideWhenDone: true }}>
-            <Typist.Delay ms={900} />
+            <Typist.Delay ms={200} />
               <span className="helloworld">print("Hello World")</span>
               </Typist>
               

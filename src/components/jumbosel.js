@@ -1,9 +1,10 @@
 import React from 'react'
-import GAlogo from '../assests/ga_logo.jpg'
-import DJ from '../assests/dj.jpg'
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Jumbocard from '../components/jumbocard.js'
+import GAlogo from '../assests/ga_logo.jpg'
+import DJ from '../assests/dj.jpg'
+import CSU from '../assests/csu_global.png'
 
 
 class Jumbosel extends React.Component {
@@ -18,9 +19,14 @@ class Jumbosel extends React.Component {
                 },
                 {
                     id: 1,
+                    imgSrc: CSU,
+                    description: 'Currently pursuing a B.S in Management Information Systems and Business Analytics'
+                },                  
+                {
+                    id: 2,
                     imgSrc: DJ,
-                    description: 'Before the software development, I was a DJ and Music Producer'
-                }                
+                    description: 'Before software development, I was a DJ and Music Producer'
+                }                                
             ]
         }
     }
@@ -51,7 +57,7 @@ class Jumbosel extends React.Component {
     render() {
         return(
             <Container fluid={true}>
-                <Row className="Justify-content-around justify-content-center">
+                <Row className="justify-content-around justify-content-center">
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>

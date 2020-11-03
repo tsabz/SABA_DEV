@@ -29,10 +29,12 @@ export default function useDraggable(el) {
 
     return () => {
       el.current.removeEventListener("mousedown", handleMouseDown);
+      // eslint-disable-next-line
     };
   }, [dx, dy]);
 
   useEffect(() => {
     el.current.style.transform = `translate3d(${dx}px, ${dy}px, 0)`;
+    // eslint-disable-next-line
   }, [dx, dy]);
 }

@@ -28,7 +28,7 @@ code {
   justify-content: center;
   width: 300px;
   height: 200px;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   content: url(star_cluster.jpg);
   margin: 20px;
   /* box-shadow: 1px 1px 5px 5px #000000; */

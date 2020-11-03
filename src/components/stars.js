@@ -22,7 +22,7 @@ const DraggableCard = ({ children }) => {
        <Typist className="TypistExample-message"
         cursor={{ hideWhenDone: true }}>
       <Typist.Delay ms={200} />
-        <span className="helloworld">Drag and Drop the <b>Stars</b>✧</span>
+        <span className="helloworld">Drag and Drop the <i>Stars</i>✧</span>
         </Typist>
         </div>
         <div className="container">

@@ -7,7 +7,7 @@ import './App.css';
 
 import Footer from './components/footer.js';
 import HomePage from './pages/home.js';
-// import ProjectPage from './pages/projects.js';
+import ProjectPage from './pages/projects.js';
 import Typist from 'react-typist';
 
 class App extends React.Component {
@@ -58,6 +58,9 @@ class App extends React.Component {
             <Route path="/" exact render={() => 
                 <HomePage 
                     img={this.state.home.img} title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
+            <Route path="/projects" render={() => 
+                <ProjectPage 
+                    title={this.state.projects.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
             <Footer />
         </Container>
       </Router>
